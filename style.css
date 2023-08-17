@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: rgb(46, 169, 178);
+}
+
+.header {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileMenu {
+  color: rgb(252, 252, 252);
+  background-color: black;
+  display: none;
+  border-top: 1px solid white;
+}
+
+.mobileMenu ul > * {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  display: inline;
+  padding-left: 50px;
+  font-size: 25px;
+}
+
+i {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: larger;
+}
+
+input {
+  padding: 15px;
+  font-size: 1em;
+  width: 100%;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  resize: vertical;
+}
+
+.userImg {
+  animation-name: userImage;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.sendButton {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition: 1s;
+}
+
+.sendButton:hover {
+  background-color: orange;
+}
+
+.menuButton {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3em;
+}
+
+.home h3 {
+  font-size: 1.5em;
+}
+
+.divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+  display: inline;
+}
+
+.divider-custom {
+  margin: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom > * {
+  margin: 10px;
+}
+
+.section2 p {
+  width: 600px;
+  text-align: center;
+  margin-left: 300px;
+}
+
+.section2 {
+  text-align: center;
+}
+
+#home_section {
+  height: 100vh;
+}
+
+.projects {
+  background-color: green;
+}
+
+.about {
+  background-color: green;
+}
+
+.contact {
+  background-color: green;
+}
+
+.header,
+.mobileMenu,
+.projects,
+.about,
+.contact {
+  padding: 15px 5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.profileSkills {
+  margin: 10px;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  height: 250px;
+  max-width: 350px;
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 1s;
+}
+
+.projectCard:hover {
+  background-color: var(--bg-color);
+  transform: scale(1.1);
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.aboutContainer > * {
+  margin: 10px;
+  width: 45%;
+  min-width: 300px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .projectCard {
+    height: 300px;
+    max-width: 350px;
+    width: 40%;
+    margin-bottom: 3rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectCard {
+    height: 300px;
+    max-width: 350px;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .projectsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .aboutContainer > * {
+    margin: 10px;
+    width: 80%;
+  }
+}
+
+@keyframes userImage {
+  100% {
+    transform: scale(1.1);
+  }
+}

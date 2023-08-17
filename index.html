@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Set the width of the scrollbar */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Set the background color of the track */
+      ::-webkit-scrollbar-track {
+        background-color: #e7bcae;
+      }
+
+      /* Set the color of the thumb */
+      ::-webkit-scrollbar-thumb {
+        background-color: #da1d1d;
+        border-radius: 5px;
+      }
+
+      /* Set the color of the thumb on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #f94b00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <span><a href="">Web Developer</a></span>
+      <ul class="hide">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <header class="mobileMenu">
+      <ul class="" type="none">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="home" id="home_section">
+        <img
+          class="userImg"
+          src="https://drive.google.com/uc?id=1WCmlKA7RwZpNWR7ECPLHDK7kVmIGwraX"
+          alt="userImg"
+          height="350px"
+        />
+        <br />
+        <h1>Web Developer</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://drive.google.com/uc?id=1HNAOLP5lc7g5_J2rWrgU6kyxeIIHmrOL"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <h3 class="profileSkills">
+          HTML5 | CSS3 | JavaScript | React js | Node js | Express js | MongoDB
+        </h3>
+        <br /><br />
+        <br /><br />
+      </section>
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://drive.google.com/uc?id=1HNAOLP5lc7g5_J2rWrgU6kyxeIIHmrOL"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="projectsContainer">
+          <div class="projectCard" onclick="redirectToProject()">
+            <img
+              src="https://drive.google.com/uc?id=1JvPaPK7WX6e7gZkM2ZJzcpUJvnfKbwWp"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Counter</h2>
+          </div>
+          <div class="projectCard">
+            <img
+              src="https://drive.google.com/uc?id=1UtWhG63jI0GU9Qfl_r0Jrj9OR1hu2TqA"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Todo</h2>
+          </div>
+          <div class="projectCard">
+            <img
+              src="https://drive.google.com/uc?id=1aIeDbn3TBS0gxv8WD0MoO0JrZh5BJyb3"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Calculator</h2>
+          </div>
+          <div class="projectCard">
+            <img
+              src="https://drive.google.com/uc?id=1ZfIw-tk87vOX0d4tF8MJDkGkzZHCtcRu"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Weather Finder</h2>
+          </div>
+          <div class="projectCard">
+            <img
+              src="https://drive.google.com/uc?id=1e8Wz0zasS6ghFMsxSA1PjfTUiyV-7coT"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Contact Keeper</h2>
+          </div>
+          <div class="projectCard">
+            <img
+              src="https://drive.google.com/uc?id=1aCzG4cfBARzFmRro_wDHmIaYtBd0X71B"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>E-Commerce website</h2>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h1>About Us</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://drive.google.com/uc?id=1HNAOLP5lc7g5_J2rWrgU6kyxeIIHmrOL"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="aboutContainer">
+          <p>
+            I am a full stack developer who have more interest in building new
+            things.
+          </p>
+          <p>
+            I am a trainer to help freshers to get job in full stack development
+            roles.
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://drive.google.com/uc?id=1HNAOLP5lc7g5_J2rWrgU6kyxeIIHmrOL"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="contactContainer">
+          <form action="">
+            <input type="text" placeholder="Full name" required />
+            <br />
+            <br />
+            <input type="email" placeholder="Email address" required />
+            <br />
+            <br />
+            <input type="number" placeholder="Phone number" required />
+            <br />
+            <br />
+            <input type="text" placeholder="Place" required />
+            <br />
+            <br />
+            <textarea
+              placeholder="Message"
+              name=""
+              id=""
+              cols="35"
+              rows="10"
+              minlength="1"
+              required
+            ></textarea>
+            <br />
+            <br />
+            <button class="sendButton">Send</button>
+          </form>
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; Web Developer</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
